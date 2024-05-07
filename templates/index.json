@@ -46,6 +46,9 @@
         "show_text_below": false
       }
     },
+    "custom_test": {
+      "type": "custom-test"
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -201,6 +204,7 @@
   },
   "order": [
     "image_banner",
+    "custom_test",
     "rich_text",
     "featured_collection",
     "collage",
