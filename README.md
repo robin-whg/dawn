@@ -1,3 +1,17 @@
+- Was ist der Unterschied zwischen Balkonkraftwerk und einer herkömmlichen Solaranalge?
+- Muss ich die Installation bei meinem Stromanbieter melden?
+- Muss ich meinen Stromzähler erneuern?
+- Wo stelle ich mein Balkonkraftwerk am besten auf?
+- Gibt es Förderung für Balkonkraftwerke?
+- Wie schließe ich ein Balkonkraftwerk an den Strom an?
+- Welche Einzelteile brauche ich für die Inbetriebnahme?
+- Welches Komplettset ist am besten für mich geeignet?
+- Welche rechtlichen Auflagen muss ich beachten?
+- Wie wird mir die Anlage geliefert und kann ich einen Termin vereinbaren?
+- Ist mein Balkon für die Halterung geeignet?
+- Wie viel von meinem Strombedarf kann ich mit einer Anlage decken?
+- Wie viel Strom darf die Anlage maximal erzeugen?
+
 # Dawn
 
 [![Build status](https://github.com/shopify/dawn/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Shopify/dawn/actions/workflows/ci.yml?query=branch%3Amain)
