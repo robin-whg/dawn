@@ -5,8 +5,8 @@
       "settings": {
       }
     },
-    "solar_testimonials": {
-      "type": "solar-testimonials",
+    "solar_how_to": {
+      "type": "solar-how-to",
       "settings": {
       }
     },
@@ -15,8 +15,22 @@
       "settings": {
       }
     },
+    "solar_testimonials": {
+      "type": "solar-testimonials",
+      "settings": {
+      }
+    },
+    "solar_incentives": {
+      "type": "solar-incentives",
+      "settings": {}
+    },
     "solar_faq": {
       "type": "solar-faq",
+      "settings": {
+      }
+    },
+    "solar_cta": {
+      "type": "solar-cta",
       "settings": {
       }
     },
@@ -26,21 +40,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Balkonkraftwerke für Ihr Zuhause",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Nachhaltige Energie für Ihren Balkon – Einfach, Effizient, Umweltfreundlich!",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Zu den Produkten",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -69,7 +83,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Mit einem Starterset loslegen",
+        "title": "Mit einem Komplettset loslegen",
         "heading_size": "h1",
         "collection": "all",
         "products_to_show": 8,
@@ -90,9 +104,12 @@
   "order": [
     "image_banner",
     "solar_feature",
+    "solar_how_to",
     "featured_collection",
     "solar_about",
     "solar_testimonials",
-    "solar_faq"
+    "solar_incentives",
+    "solar_faq",
+    "solar_cta"
   ]
 }

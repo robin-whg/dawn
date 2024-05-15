@@ -1,3 +1,18 @@
+# ToDo
+
+- [ ] Logo
+- [ ] Titel
+- [ ] Beschreibung
+- [ ] Slogan
+- [ ] About Vorteile
+- [ ] FAQ Fragen
+- [ ] Testimonials Reviews
+
+- [ ] Animationen
+- [ ] Button Farbe
+
+## FAQ
+
 - Was ist der Unterschied zwischen Balkonkraftwerk und einer herkömmlichen Solaranalge?
 - Muss ich die Installation bei meinem Stromanbieter melden?
 - Muss ich meinen Stromzähler erneuern?

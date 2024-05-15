@@ -138,8 +138,8 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#030712",
-          "button": "#030712",
-          "button_label": "#eab308",
+          "button": "#facc15",
+          "button_label": "##030712",
           "secondary_button_label": "#030712",
           "shadow": "#030712"
         }
@@ -199,8 +199,8 @@
             "background": "#FFFFFF",
             "background_gradient": "",
             "text": "#030712",
-            "button": "#030712",
-            "button_label": "#eab308",
+            "button": "#facc15",
+            "button_label": "#030712",
             "secondary_button_label": "#030712",
             "shadow": "#030712"
           }
