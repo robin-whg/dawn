@@ -1,39 +1,5 @@
 {
   "sections": {
-    "solar_feature": {
-      "type": "solar-feature",
-      "settings": {
-      }
-    },
-    "solar_how_to": {
-      "type": "solar-how-to",
-      "settings": {
-      }
-    },
-    "solar_about": {
-      "type": "solar-about",
-      "settings": {
-      }
-    },
-    "solar_testimonials": {
-      "type": "solar-testimonials",
-      "settings": {
-      }
-    },
-    "solar_incentives": {
-      "type": "solar-incentives",
-      "settings": {}
-    },
-    "solar_faq": {
-      "type": "solar-faq",
-      "settings": {
-      }
-    },
-    "solar_cta": {
-      "type": "solar-cta",
-      "settings": {
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -75,9 +41,20 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "solar_feature": {
+      "type": "solar-feature",
+      "settings": {
+      }
+    },
+    "solar_how_to": {
+      "type": "solar-how-to",
+      "settings": {
       }
     },
     "featured_collection": {
@@ -85,18 +62,56 @@
       "settings": {
         "title": "Mit einem Komplettset loslegen",
         "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
+        "full_width": false,
         "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "solar_about": {
+      "type": "solar-about",
+      "settings": {
+      }
+    },
+    "solar_testimonials": {
+      "type": "solar-testimonials",
+      "settings": {
+      }
+    },
+    "solar_incentives": {
+      "type": "solar-incentives",
+      "settings": {
+      }
+    },
+    "solar_faq": {
+      "type": "solar-faq",
+      "settings": {
+      }
+    },
+    "solar_cta": {
+      "type": "solar-cta",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "image_behavior": "zoom-in",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
