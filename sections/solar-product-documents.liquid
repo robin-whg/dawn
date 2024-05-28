@@ -1,0 +1,53 @@
+{%- if product.metafields.custom.dokumente -%}
+  <div class="tw-bg-sky-300 tw-my-16 tw-overflow-hidden">
+    <div class="tw-relative tw-container tw-mx-auto tw-max-w-[1400px] tw-py-16 md:tw-px-12 tw-px-4 tw-grid tw-grid-cols-1 md:tw-grid-cols-5 tw-gap-6 md:tw-gap-12">
+      <div class="tw-col-span-5 md:tw-col-span-3 tw-z-10">
+        <h2 class="tw-text-[30px] md:tw-text-[40px] tw-mb-3">Dokumente</h2>
+        <ul class="tw-divide-y tw-divide-sky-200">
+          {% for file in product.metafields.custom.dokumente.value %}
+            {% assign file_name_initial = file.url | split: '/' | last %}
+            {% assign file_name_long = file_name_initial | split: '.pdf' | first %}
+            {% assign file_name = file_name_long | replace: '_', ' ' %}
+            <li class="tw-flex tw-justify-between tw-items-center tw-py-3 tw-gap-1.5">
+              <p class="tw-text-lg md:tw-text-xl tw-truncate">{{ file_name }}</p>
+
+              <a href="{{ file.url }}" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-download tw-flex-none tw-h-8 tw-w-8 md:tw-h-10 md:tw-w-10 tw-text-yellow-300"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" />
+                </svg>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="tw-translate-y-3 tw-absolute tw-right-0 tw-top-0 icon icon-tabler icons-tabler-outline icon-tabler-download tw-flex-none tw-h-96 tw-w-96 tw-text-sky-200/25 md:tw-text-sky-200/50"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 17h6" /><path d="M9 13h6" />
+      </svg>
+
+      <div class="tw-col-span-5 tw-row-span-4 md:tw-col-span-2 tw-flex tw-flex-col tw-items-end tw-gap-3"></div>
+    </div>
+  </div>
+{%- endif -%}
