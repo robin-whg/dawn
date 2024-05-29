@@ -1,7 +1,7 @@
 {%- if product.metafields.custom.dokumente -%}
   <div class="tw-bg-sky-300 tw-my-16 tw-overflow-hidden">
     <div class="tw-relative tw-container tw-mx-auto tw-max-w-[1400px] tw-py-16 md:tw-px-12 tw-px-4 tw-grid tw-grid-cols-1 md:tw-grid-cols-5 tw-gap-6 md:tw-gap-12">
-      <div class="tw-col-span-5 md:tw-col-span-3 tw-z-10">
+      <div class="tw-col-span-5 md:tw-col-span-3">
         <h2 class="tw-text-[30px] md:tw-text-[40px] tw-mb-3">Dokumente</h2>
         <ul class="tw-divide-y tw-divide-sky-200">
           {% for file in product.metafields.custom.dokumente.value %}
@@ -42,7 +42,7 @@
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="tw-translate-y-3 tw-absolute tw-right-0 tw-top-0 icon icon-tabler icons-tabler-outline icon-tabler-download tw-flex-none tw-h-96 tw-w-96 tw-text-sky-200/25 md:tw-text-sky-200/50"
+        class="tw-hidden md:tw-block tw-translate-y-3 tw-absolute tw-right-0 tw-top-0 icon icon-tabler icons-tabler-outline icon-tabler-download tw-flex-none tw-h-96 tw-w-96 tw-text-sky-200/25 md:tw-text-sky-200/50"
       >
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 17h6" /><path d="M9 13h6" />
       </svg>
