@@ -65,7 +65,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "komplettpakete",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -73,7 +73,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -90,13 +90,61 @@
       "settings": {
       }
     },
-    "solar_testimonials": {
-      "type": "solar-testimonials",
+    "solar_incentives": {
+      "type": "solar-incentives",
+      "disabled": true,
       "settings": {
       }
     },
-    "solar_incentives": {
-      "type": "solar-incentives",
+    "collection_list_dndztg": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_LLRyB7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "komplettpakete"
+          }
+        },
+        "featured_collection_4DrFkE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "balkonkraftwerke-1"
+          }
+        },
+        "featured_collection_rQEqDK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "zubehor"
+          }
+        },
+        "featured_collection_zEMwRk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "montagesystem"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_LLRyB7",
+        "featured_collection_4DrFkE",
+        "featured_collection_rQEqDK",
+        "featured_collection_zEMwRk"
+      ],
+      "settings": {
+        "title": "Kategorien",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "solar_testimonials": {
+      "type": "solar-testimonials",
       "settings": {
       }
     },
@@ -107,10 +155,53 @@
     },
     "solar_cta": {
       "type": "solar-cta",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "image_with_text_cPLj3W": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kA79aE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nutzen Sie die Kraft der Sonne!",
+            "heading_size": "h1"
+          }
+        },
+        "text_g3XjA9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bestellen Sie noch heute Ihr Balkonkraftwerk und machen Sie den ersten Schritt in eine grünere Zukunft.<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_bEkfet": {
+          "type": "button",
+          "settings": {
+            "button_label": "Produkte ansehen",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kA79aE",
+        "text_g3XjA9",
+        "button_bEkfet"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/pexels-jonas-ferlin-3025562.jpg",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
         "image_behavior": "zoom-in",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -122,9 +213,11 @@
     "solar_how_to",
     "featured_collection",
     "solar_about",
-    "solar_testimonials",
     "solar_incentives",
+    "collection_list_dndztg",
+    "solar_testimonials",
     "solar_faq",
-    "solar_cta"
+    "solar_cta",
+    "image_with_text_cPLj3W"
   ]
 }
