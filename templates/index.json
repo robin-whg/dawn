@@ -6,14 +6,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Balkonkraftwerke für Ihr Zuhause",
+            "heading": "Energie sparen und die Umwelt schonen",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Nachhaltige Energie für Ihren Balkon – Einfach, Effizient, Umweltfreundlich!",
+            "text": "Nutzen sie  unsere Steckfertigen Balkonkraftwerk-Lösungen für Zuhause.",
             "text_style": "body"
           }
         },
@@ -35,11 +35,13 @@
         "button"
       ],
       "settings": {
+        "video_background": true,
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dafa50aeec744681a987096d6fb2c579.mp4",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "bottom",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -199,7 +201,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "image_behavior": "zoom-in",
         "mobile_content_alignment": "left",
         "padding_top": 36,
