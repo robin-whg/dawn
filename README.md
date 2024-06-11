@@ -1,15 +1,6 @@
 # ToDo
 
-- [ ] Logo
-- [ ] Titel
-- [ ] Beschreibung
-- [ ] Slogan
-- [ ] About Vorteile
-- [ ] FAQ Fragen
-- [ ] Testimonials Reviews
-
-- [ ] Animationen
-- [ ] Button Farbe
+npx tailwindcss -i ./src/input.css -o ./assets/application.css
 
 ## FAQ
 

@@ -20,7 +20,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Zu den Produkten",
+            "button_label_1": "Produkten ansehen",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -36,7 +36,7 @@
       ],
       "settings": {
         "video_background": true,
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dafa50aeec744681a987096d6fb2c579.mp4",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/c3ec88e469c6440f8bb45ae9e90bf695.mp4",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -67,7 +67,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "komplettpakete",
+        "collection": "balkonkraftwerke-1",
         "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
@@ -101,12 +101,6 @@
     "collection_list_dndztg": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_LLRyB7": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "komplettpakete"
-          }
-        },
         "featured_collection_4DrFkE": {
           "type": "featured_collection",
           "settings": {
@@ -118,27 +112,19 @@
           "settings": {
             "collection": "zubehor"
           }
-        },
-        "featured_collection_zEMwRk": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "montagesystem"
-          }
         }
       },
       "block_order": [
-        "featured_collection_LLRyB7",
         "featured_collection_4DrFkE",
-        "featured_collection_rQEqDK",
-        "featured_collection_zEMwRk"
+        "featured_collection_rQEqDK"
       ],
       "settings": {
         "title": "Kategorien",
         "heading_size": "h1",
         "image_ratio": "square",
-        "columns_desktop": 4,
+        "columns_desktop": 2,
         "color_scheme": "",
-        "show_view_all": true,
+        "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -192,20 +178,82 @@
         "text_g3XjA9",
         "button_bEkfet"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/pexels-jonas-ferlin-3025562.jpg",
-        "height": "adapt",
-        "desktop_image_width": "small",
+        "image": "shopify:\/\/shop_images\/pexels-jan-van-bizar-12224996.jpg",
+        "height": "medium",
+        "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "image_behavior": "zoom-in",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "video_gi8ijJ": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify:\/\/files\/videos\/iStock-1634059690.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "solar_video": {
+      "type": "solar-video"
+    },
+    "rich_text_TR78W8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fYAryq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nutzen Sie die Kraft der Sonne!",
+            "heading_size": "h1"
+          }
+        },
+        "text_6xQWge": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bestellen Sie noch heute Ihr Balkonkraftwerk und machen Sie den ersten Schritt in eine grünere Zukunft.<\/p>"
+          }
+        },
+        "button_DrpUN4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Produkte ansehen",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fYAryq",
+        "text_6xQWge",
+        "button_DrpUN4"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
@@ -213,13 +261,16 @@
     "image_banner",
     "solar_feature",
     "solar_how_to",
+    "collection_list_dndztg",
+    "solar_incentives",
     "featured_collection",
     "solar_about",
-    "solar_incentives",
-    "collection_list_dndztg",
     "solar_testimonials",
     "solar_faq",
     "solar_cta",
-    "image_with_text_cPLj3W"
+    "image_with_text_cPLj3W",
+    "video_gi8ijJ",
+    "solar_video",
+    "rich_text_TR78W8"
   ]
 }
