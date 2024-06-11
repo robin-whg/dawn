@@ -36,7 +36,7 @@
       ],
       "settings": {
         "video_background": true,
-        "video_url": "https://cdn.shopify.com/videos/c/o/v/c3ec88e469c6440f8bb45ae9e90bf695.mp4",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c3ec88e469c6440f8bb45ae9e90bf695.mp4",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -59,8 +59,55 @@
       "settings": {
       }
     },
+    "collection_list_dndztg": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_4DrFkE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "balkonkraftwerke-1"
+          }
+        },
+        "featured_collection_yGVPzz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "montagesysteme"
+          }
+        },
+        "featured_collection_rQEqDK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "zubehor"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_4DrFkE",
+        "featured_collection_yGVPzz",
+        "featured_collection_rQEqDK"
+      ],
+      "settings": {
+        "title": "Kategorien",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "solar_incentives": {
+      "type": "solar-incentives",
+      "disabled": true,
+      "settings": {
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Mit einem Komplettset loslegen",
         "heading_size": "h1",
@@ -90,45 +137,6 @@
     "solar_about": {
       "type": "solar-about",
       "settings": {
-      }
-    },
-    "solar_incentives": {
-      "type": "solar-incentives",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "collection_list_dndztg": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_4DrFkE": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "balkonkraftwerke-1"
-          }
-        },
-        "featured_collection_rQEqDK": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "zubehor"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_4DrFkE",
-        "featured_collection_rQEqDK"
-      ],
-      "settings": {
-        "title": "Kategorien",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 2,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "solar_testimonials": {
@@ -212,7 +220,9 @@
       }
     },
     "solar_video": {
-      "type": "solar-video"
+      "type": "solar-video",
+      "settings": {
+      }
     },
     "rich_text_TR78W8": {
       "type": "rich-text",
