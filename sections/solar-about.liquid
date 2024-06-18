@@ -1,101 +1,131 @@
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+
 <div class="tw-my-16">
-  <div class="tw-container tw-mx-auto tw-max-w-[1400px] tw-py-16 md:tw-px-12 tw-px-4 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-8">
-    <div class="md:tw-col-span-2">
-      <h2 class="tw-text-[30px] md:tw-text-[40px]">Warum Mein Solar?</h2>
-    </div>
+  <slider-component class="slider-mobile-gutter scroll-trigger animate--slide-in">
+    <div
+      id="Slider-{{ section.id }}"
+      role="list"
+      class="tw-container tw-mx-auto tw-max-w-[1400px] tw-py-16 md:tw-px-12 tw-px-4 tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-8"
+    >
+      <div
+        class="md:tw-col-span-2"
+      >
+        <h2 class="scroll-trigger animate--slide-in tw-text-[30px] md:tw-text-[40px]">Warum Mein Solar?</h2>
+      </div>
 
-    <div>
-      <div class="tw-flex tw-gap-3 tw-text-lg tw-font-semibold tw-items-center tw-text-black">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-check tw-flex-none tw-h-8 tw-w-8 tw-text-yellow-300"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" />
-        </svg>
-        Schnelle Lieferung
+      <div
+        id="Slide-{{ section.id }}-0"
+        class="slider__slide scroll-trigger animate--slide-in"
+        data-cascade
+        style="--animation-order: 0;"
+      >
+        <div class="tw-flex tw-gap-3 tw-text-lg tw-font-semibold tw-items-center tw-text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-check tw-flex-none tw-h-8 tw-w-8 tw-text-yellow-300"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" />
+          </svg>
+          Schnelle Lieferung
+        </div>
+        <div class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
+          Genießen Sie unsere blitzschnelle Lieferung, dank unseres zentral gelegenen Lagers in der Mitte Deutschlands.
+        </div>
       </div>
-      <div class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
-        Genießen Sie unsere blitzschnelle Lieferung, dank unseres zentral gelegenen Lagers in der Mitte Deutschlands.
-      </div>
-    </div>
 
-    <div>
-      <div class="tw-flex tw-gap-3 tw-text-lg tw-font-semibold tw-items-center tw-text-black">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-check tw-flex-none tw-h-8 tw-w-8 tw-text-yellow-300"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" />
-        </svg>
-        Ausgezeichneter Service
+      <div
+        id="Slide-{{ section.id }}-1"
+        class="slider__slide scroll-trigger animate--slide-in"
+        data-cascade
+        style="--animation-order: 1;"
+      >
+        <div class="tw-flex tw-gap-3 tw-text-lg tw-font-semibold tw-items-center tw-text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-check tw-flex-none tw-h-8 tw-w-8 tw-text-yellow-300"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" />
+          </svg>
+          Ausgezeichneter Service
+        </div>
+        <div class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
+          Wenn Sie Hilfe benötigen, melden Sie sich gerne telefonisch oder per Mail bei uns und wir helfen Ihnen so
+          schnell wie möglich.
+        </div>
       </div>
-      <div class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
-        Wenn Sie Hilfe benötigen, melden Sie sich gerne telefonisch oder per Mail bei uns und wir helfen Ihnen so
-        schnell wie möglich.
-      </div>
-    </div>
 
-    <div>
-      <div class="tw-flex tw-gap-3 tw-text-lg tw-font-semibold tw-items-center tw-text-black">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-check tw-flex-none tw-h-8 tw-w-8 tw-text-yellow-300"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" />
-        </svg>
-        Hochwertige Produkte
+      <div
+        id="Slide-{{ section.id }}-2"
+        class="slider__slide scroll-trigger animate--slide-in"
+        data-cascade
+        style="--animation-order: 2;"
+      >
+        <div class="tw-flex tw-gap-3 tw-text-lg tw-font-semibold tw-items-center tw-text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-check tw-flex-none tw-h-8 tw-w-8 tw-text-yellow-300"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" />
+          </svg>
+          Hochwertige Produkte
+        </div>
+        <div class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
+          Wir haben eine Vielzahl von Produkten getestet, um Ihnen erstklassige Qualität und ein ausgezeichnetes
+          Preis-Leistungs-Verhältnis zu bieten.
+        </div>
       </div>
-      <div class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
-        Wir haben eine Vielzahl von Produkten getestet, um Ihnen erstklassige Qualität und ein ausgezeichnetes
-        Preis-Leistungs-Verhältnis zu bieten.
-      </div>
-    </div>
 
-    <div>
-      <div class="tw-flex tw-gap-3 tw-text-lg tw-font-semibold tw-items-center tw-text-black">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="icon icon-tabler icons-tabler-outline icon-tabler-check tw-flex-none tw-h-8 tw-w-8 tw-text-yellow-300"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" />
-        </svg>
-        Abholung
-      </div>
-      <div class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
-        Sparen Sie sich die Versandkosten und holen einfach persönlich Ihre Ware an unserem Lager ab.
+      <div
+        id="Slide-{{ section.id }}-3"
+        class="slider__slide scroll-trigger animate--slide-in"
+        data-cascade
+        style="--animation-order: 3;"
+      >
+        <div class="tw-flex tw-gap-3 tw-text-lg tw-font-semibold tw-items-center tw-text-black">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-check tw-flex-none tw-h-8 tw-w-8 tw-text-yellow-300"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" />
+          </svg>
+          Abholung
+        </div>
+        <div class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
+          Sparen Sie sich die Versandkosten und holen einfach persönlich Ihre Ware an unserem Lager ab.
+        </div>
       </div>
     </div>
-  </div>
+  </slider-component>
 </div>

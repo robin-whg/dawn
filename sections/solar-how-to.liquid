@@ -1,85 +1,123 @@
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+
 <div class="tw-container tw-mx-auto tw-max-w-[1400px] tw-py-16 md:tw-px-12 tw-px-4">
-  <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-11 tw-gap-3 md:tw-gap-6">
-    <div class="md:tw-col-span-11 tw-col-span-1 tw-mb-3 md:tw-order-1">
-      <h2 class="tw-text-[30px] md:tw-text-[40px]">So einfach geht’s</h2>
-    </div>
-
-    <div class="flex flex-col md:tw-col-span-3 tw-col-span-1 md:tw-order-2 tw-mx-auto">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0822/2611/8985/files/Aufstellen_2f5375b8-d62d-4b93-983d-696695b08200.png?v=1718024210"
-        class="tw-object-contain"
-        width="598"
-        height="620"
-      >
-    </div>
-
-    <div class="tw-col-span-1 md:tw-col-span-3 tw-flex tw-flex-col tw-gap-3 tw-text-center tw-items-center md:tw-order-6">
-      <h1 class="tw-text-2xl">Aufstellen</h1>
-      <div class="tw-text-base tw-leading-7 tw-text-gray-600 tw-max-w-2xl">
-        Die Module und den Wechselrichter am gewünschten Ort montieren.
+  <slider-component class="slider-mobile-gutter scroll-trigger animate--slide-in">
+    <div
+      id="Slider-{{ section.id }}"
+      role="list"
+      class="tw-grid tw-grid-cols-1 md:tw-grid-cols-11 tw-gap-3 md:tw-gap-6"
+    >
+      <div class="md:tw-col-span-11 tw-col-span-1 tw-mb-3 md:tw-order-1">
+        <h2 class="tw-text-[30px] md:tw-text-[40px] scroll-trigger animate--slide-in">So einfach geht’s</h2>
       </div>
-    </div>
 
-    <div class="tw-hidden md:tw-block tw-col-span-1 md:tw-col-span-1 md:tw-order-3">
-      <svg
-        class="tw-w-full tw-h-auto tw-flex-none"
-        width="260"
-        height="82"
-        viewBox="0 0 260 82"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        id="Slide-{{ section.id }}-0"
+        data-cascade
+        style="--animation-order: 0;"
+        class="slider__slide scroll-trigger animate--slide-in flex flex-col md:tw-col-span-3 tw-col-span-1 md:tw-order-2 tw-mx-auto"
       >
-        <path d="M3.44024 52.2391C0.443231 53.6528 -0.840283 57.2284 0.573432 60.2254C1.98715 63.2225 5.56275 64.506 8.55976 63.0923L3.44024 52.2391ZM256.027 63.3129C259.146 62.1933 260.767 58.7574 259.647 55.6385L241.403 4.81388C240.283 1.69502 236.847 0.074273 233.729 1.19383C230.61 2.31339 228.989 5.7493 230.109 8.86816L246.326 54.0456L201.148 70.2628C198.029 71.3823 196.409 74.8182 197.528 77.9371C198.648 81.0559 202.084 82.6767 205.202 81.5571L256.027 63.3129ZM8.55976 63.0923C45.3932 45.7176 86.5534 36 130 36V24C84.7465 24 41.8411 34.1251 3.44024 52.2391L8.55976 63.0923ZM130 36C173.447 36 214.607 45.7176 251.44 63.0923L256.56 52.2391C218.159 34.1251 175.254 24 130 24V36Z" fill="#1B1D21"/>
-      </svg>
-    </div>
-
-    <div class="flex flex-col tw-justify-center md:tw-col-span-3 tw-col-span-1 md:tw-order-3 tw-mx-auto">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0822/2611/8985/files/Verbinden_e5a654cc-e0d2-4e2a-9737-6ab8ca320f10.png?v=1718024209"
-        class="tw-object-contain"
-        width="598"
-        height="620"
-      >
-    </div>
-
-    <div class="tw-col-span-1 md:tw-col-span-3 tw-flex tw-flex-col tw-gap-3 tw-text-center tw-items-center md:tw-order-8">
-      <h1 class="tw-text-2xl">Verbinden</h1>
-      <div class="tw-text-base tw-leading-7 tw-text-gray-600 tw-max-w-2xl">
-        Module mit den mitgelieferten Kabeln mit Wechselrichter verbinden.
+        <img
+          src="https://cdn.shopify.com/s/files/1/0822/2611/8985/files/Aufstellen_2f5375b8-d62d-4b93-983d-696695b08200.png?v=1718024210"
+          class="tw-object-contain"
+          width="598"
+          height="620"
+        >
       </div>
-    </div>
 
-    <div class="tw-hidden md:tw-block tw-col-span-1 md:tw-col-span-1 tw-self-end tw-p-1 md:tw-order-4">
-      <svg
-        class="tw-w-full tw-h-auto tw-flex-none"
-        width="260"
-        height="82"
-        viewBox="0 0 260 82"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        id="Slide-{{ section.id }}-0"
+        data-cascade
+        style="--animation-order: 0;"
+        class="slider__slide scroll-trigger animate--slide-in tw-col-span-1 md:tw-col-span-3 tw-flex tw-flex-col tw-gap-3 tw-text-center tw-items-center md:tw-order-6"
       >
-        <path d="M3.44024 30.4269C0.443233 29.0132 -0.840281 25.4376 0.573435 22.4406C1.98715 19.4436 5.56275 18.16 8.55976 19.5738L3.44024 30.4269ZM256.027 19.3532C259.146 20.4727 260.767 23.9086 259.647 27.0275L241.403 77.8522C240.283 80.971 236.847 82.5918 233.729 81.4722C230.61 80.3526 228.989 76.9167 230.109 73.7979L246.326 28.6204L201.148 12.4033C198.029 11.2837 196.409 7.8478 197.528 4.72894C198.648 1.61009 202.084 -0.0106614 205.202 1.1089L256.027 19.3532ZM8.55976 19.5738C45.3932 36.9484 86.5534 46.666 130 46.666L130 58.666C84.7465 58.666 41.8411 48.5409 3.44024 30.4269L8.55976 19.5738ZM130 46.666C173.447 46.666 214.607 36.9484 251.44 19.5738L256.56 30.4269C218.159 48.5409 175.254 58.666 130 58.666L130 46.666Z" fill="#1B1D21"/>
-      </svg>
-    </div>
-
-    <div class="flex flex-col tw-justify-center md:tw-col-span-3 tw-col-span-1 md:tw-order-5 tw-mx-auto">
-      <img
-        src="https://cdn.shopify.com/s/files/1/0822/2611/8985/files/Einstecken_2d40356e-a597-4866-b514-1d12210d4df3.png?v=1718024209"
-        class="tw-object-contain"
-        width="598"
-        height="620"
-      >
-    </div>
-
-    <div class="tw-col-span-1 md:tw-col-span-3 tw-flex tw-flex-col tw-gap-3 tw-text-center tw-items-center md:tw-order-10">
-      <h1 class="tw-text-2xl">Einstecken</h1>
-      <div class="tw-text-base tw-leading-7 tw-text-gray-600 tw-max-w-2xl">
-        Den Wechselrichter an eine beliebige Steckdose anschließen.
+        <h1 class="tw-text-2xl">Aufstellen</h1>
+        <div class="tw-text-base tw-leading-7 tw-text-gray-600 tw-max-w-2xl">
+          Die Module und den Wechselrichter am gewünschten Ort montieren.
+        </div>
       </div>
+
+      <div class="tw-hidden md:tw-block tw-col-span-1 md:tw-col-span-1 md:tw-order-3">
+        <svg
+          class="tw-w-full tw-h-auto tw-flex-none"
+          width="260"
+          height="82"
+          viewBox="0 0 260 82"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M3.44024 52.2391C0.443231 53.6528 -0.840283 57.2284 0.573432 60.2254C1.98715 63.2225 5.56275 64.506 8.55976 63.0923L3.44024 52.2391ZM256.027 63.3129C259.146 62.1933 260.767 58.7574 259.647 55.6385L241.403 4.81388C240.283 1.69502 236.847 0.074273 233.729 1.19383C230.61 2.31339 228.989 5.7493 230.109 8.86816L246.326 54.0456L201.148 70.2628C198.029 71.3823 196.409 74.8182 197.528 77.9371C198.648 81.0559 202.084 82.6767 205.202 81.5571L256.027 63.3129ZM8.55976 63.0923C45.3932 45.7176 86.5534 36 130 36V24C84.7465 24 41.8411 34.1251 3.44024 52.2391L8.55976 63.0923ZM130 36C173.447 36 214.607 45.7176 251.44 63.0923L256.56 52.2391C218.159 34.1251 175.254 24 130 24V36Z" fill="#1B1D21"/>
+        </svg>
+      </div>
+
+      <div
+        id="Slide-{{ section.id }}-1"
+        data-cascade
+        style="--animation-order: 1;"
+        class="slider__slide scroll-trigger animate--slide-in flex flex-col tw-justify-center md:tw-col-span-3 tw-col-span-1 md:tw-order-3 tw-mx-auto"
+      >
+        <img
+          src="https://cdn.shopify.com/s/files/1/0822/2611/8985/files/Verbinden_e5a654cc-e0d2-4e2a-9737-6ab8ca320f10.png?v=1718024209"
+          class="tw-object-contain"
+          width="598"
+          height="620"
+        >
+      </div>
+
+      <div
+        id="Slide-{{ section.id }}-1"
+        data-cascade
+        style="--animation-order: 1;"
+        class="slider__slide scroll-trigger animate--slide-in tw-col-span-1 md:tw-col-span-3 tw-flex tw-flex-col tw-gap-3 tw-text-center tw-items-center md:tw-order-8"
+      >
+        <h1 class="tw-text-2xl">Verbinden</h1>
+        <div class="tw-text-base tw-leading-7 tw-text-gray-600 tw-max-w-2xl">
+          Module mit den mitgelieferten Kabeln mit Wechselrichter verbinden.
+        </div>
+      </div>
+
+      <div class="tw-hidden md:tw-block tw-col-span-1 md:tw-col-span-1 tw-self-end tw-p-1 md:tw-order-4">
+        <svg
+          class="tw-w-full tw-h-auto tw-flex-none"
+          width="260"
+          height="82"
+          viewBox="0 0 260 82"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M3.44024 30.4269C0.443233 29.0132 -0.840281 25.4376 0.573435 22.4406C1.98715 19.4436 5.56275 18.16 8.55976 19.5738L3.44024 30.4269ZM256.027 19.3532C259.146 20.4727 260.767 23.9086 259.647 27.0275L241.403 77.8522C240.283 80.971 236.847 82.5918 233.729 81.4722C230.61 80.3526 228.989 76.9167 230.109 73.7979L246.326 28.6204L201.148 12.4033C198.029 11.2837 196.409 7.8478 197.528 4.72894C198.648 1.61009 202.084 -0.0106614 205.202 1.1089L256.027 19.3532ZM8.55976 19.5738C45.3932 36.9484 86.5534 46.666 130 46.666L130 58.666C84.7465 58.666 41.8411 48.5409 3.44024 30.4269L8.55976 19.5738ZM130 46.666C173.447 46.666 214.607 36.9484 251.44 19.5738L256.56 30.4269C218.159 48.5409 175.254 58.666 130 58.666L130 46.666Z" fill="#1B1D21"/>
+        </svg>
+      </div>
+
+      <div
+        id="Slide-{{ section.id }}-2"
+        data-cascade
+        style="--animation-order: 2;"
+        class="slider__slide scroll-trigger animate--slide-in flex flex-col tw-justify-center md:tw-col-span-3 tw-col-span-1 md:tw-order-5 tw-mx-auto"
+      >
+        <img
+          src="https://cdn.shopify.com/s/files/1/0822/2611/8985/files/Einstecken_2d40356e-a597-4866-b514-1d12210d4df3.png?v=1718024209"
+          class="tw-object-contain"
+          width="598"
+          height="620"
+        >
+      </div>
+
+      <div
+        id="Slide-{{ section.id }}-2"
+        data-cascade
+        style="--animation-order: 2;"
+        class="slider__slide scroll-trigger animate--slide-in tw-col-span-1 md:tw-col-span-3 tw-flex tw-flex-col tw-gap-3 tw-text-center tw-items-center md:tw-order-10"
+      >
+        <h1 class="tw-text-2xl">Einstecken</h1>
+        <div class="tw-text-base tw-leading-7 tw-text-gray-600 tw-max-w-2xl">
+          Den Wechselrichter an eine beliebige Steckdose anschließen.
+        </div>
+      </div>
+
+      <div class="tw-invisible tw-col-span-1 md:tw-order-7">hidden</div>
+
+      <div class="tw-invisible tw-col-span-1 md:tw-order-9">hidden</div>
     </div>
-
-    <div class="tw-invisible tw-col-span-1 md:tw-order-7">hidden</div>
-
-    <div class="tw-invisible tw-col-span-1 md:tw-order-9">hidden</div>
-  </div>
+  </slider-component>
 </div>

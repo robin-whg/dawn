@@ -1,54 +1,80 @@
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+
 <div class="tw-bg-yellow-100 tw-my-16">
-  <div class="tw-container tw-mx-auto tw-max-w-[1400px] tw-py-16 md:tw-px-12 tw-px-4 tw-grid tw-grid-cols-1 md:tw-grid-cols-5 tw-gap-6 md:tw-gap-12">
-    <div class="tw-col-span-5 tw-row-span-4 md:tw-col-span-2 tw-flex tw-flex-col tw-gap-3">
-      <h2 class="tw-text-[30px] md:tw-text-[40px]">Häufig gestellte Fragen</h2>
-      <p class="tw-text-gray-600 tw-pr-6">
-        Sie können die gesuchte Antwort nicht finden? Wenden Sie sich an unser Support-Team.
-      </p>
-    </div>
+  <slider-component class="slider-mobile-gutter scroll-trigger animate--slide-in">
+    <div
+      id="Slider-{{ section.id }}"
+      role="list"
+      class="tw-container tw-mx-auto tw-max-w-[1400px] tw-py-16 md:tw-px-12 tw-px-4 tw-grid tw-grid-cols-1 md:tw-grid-cols-5 tw-gap-6 md:tw-gap-12"
+    >
+      <div
+        id="Slide-{{ section.id }}-0"
+        data-cascade
+        style="--animation-order: 0;"
+        class="slider__slide scroll-trigger animate--slide-in tw-col-span-5 tw-row-span-4 md:tw-col-span-2 tw-flex tw-flex-col tw-gap-3"
+      >
+        <h2 class="tw-text-[30px] md:tw-text-[40px]">Häufig gestellte Fragen</h2>
+        <p class="tw-text-gray-600 tw-pr-6">
+          Sie können die gesuchte Antwort nicht finden? Wenden Sie sich an unser
+          <a
+            href="/pages/kontakt"
+            target="_self"
+            class="tw-font-bold tw-underline"
+            >Support-Team</a
+          >.
+        </p>
+      </div>
 
-    <div class="tw-col-span-5 md:tw-col-span-3">
-      <p class="tw-text-lg tw-font-semibold tw-text-black">Benötige ich einen speziellen Stromzähler?</p>
-      <p class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Augue interdum velit euismod in pellentesque massa. Feugiat scelerisque varius morbi enim nunc
-        faucibus a pellentesque sit. Eu volutpat odio facilisis mauris sit amet.
-      </p>
-    </div>
+      <div
+        id="Slide-{{ section.id }}-1"
+        data-cascade
+        style="--animation-order: 1;"
+        class="slider__slide scroll-trigger animate--slide-in tw-col-span-5 md:tw-col-span-3"
+      >
+        <p class="tw-text-lg tw-font-semibold tw-text-black">Benötige ich einen speziellen Stromzähler?</p>
+        <p class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
+          Bei Balkonkraftwerken mit einer Wechselrichterleistung bis 800 Watt ist keine Anmeldung beim
+          Messstellenbetreiber notwendig. Die Anlage muss lediglich im Marktstammdatenregister registriert werden. Ab
+          einer Anlagengröße von über 800 Watt Wechselrichterleistung muss die Anlage ebenfalls beim Netzbetreiber
+          (Messstellenbetreiber) registriert werden.
+        </p>
+      </div>
 
-    <div class="tw-col-span-5 md:tw-col-span-3">
-      <p class="tw-text-lg tw-font-semibold tw-text-black">Welche Einzelteile brauche ich für die Inbetriebnahme?</p>
-      <p class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
-        In unseren Paketen ist alles für eine problemlose Inbetriebnahme enthalten. Sie benötigen lediglich die Panels
-        um Strom zu erzeugen, einen Wechselrichter um den Strom in Wechselstrom umzuwandeln und Kabel um die Panels mit
-        dem Wechselrichter zu verbinden sowie ein Kabel um diesen an die Steckdose anzuschließen.
-      </p>
-    </div>
+      <div
+        id="Slide-{{ section.id }}-2"
+        data-cascade
+        style="--animation-order: 2;"
+        class="slider__slide scroll-trigger animate--slide-in tw-col-span-5 md:tw-col-span-3"
+      >
+        <p class="tw-text-lg tw-font-semibold tw-text-black">Welche Einzelteile brauche ich für die Inbetriebnahme?</p>
+        <p class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
+          In unseren Paketen ist alles für eine problemlose Inbetriebnahme enthalten. Sie benötigen lediglich die Panels
+          um Strom zu erzeugen, einen Wechselrichter um den Strom in Wechselstrom umzuwandeln und Kabel um die Panels
+          mit dem Wechselrichter zu verbinden sowie ein Kabel um diesen an die Steckdose anzuschließen.
+        </p>
+      </div>
 
-    <div class="tw-col-span-5 md:tw-col-span-3">
-      <p class="tw-text-lg tw-font-semibold tw-text-black">Wie viel Strom darf die Anlage maximal erzeugen?</p>
-      <p class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Augue interdum velit euismod in pellentesque massa. Feugiat scelerisque varius morbi enim nunc
-        faucibus a pellentesque sit. Eu volutpat odio facilisis mauris sit amet.
-      </p>
+      <div
+        id="Slide-{{ section.id }}-3"
+        data-cascade
+        style="--animation-order: 3;"
+        class="slider__slide scroll-trigger animate--slide-in tw-col-span-5 md:tw-col-span-3"
+      >
+        <p class="tw-text-lg tw-font-semibold tw-text-black">
+          Muss ich die Installation bei meinem Stromanbieter melden?
+        </p>
+        <p class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
+          Nein, die Inbetriebnahme muss nicht mehr beim Stromanbieter gemeldet werden, es ist jedoch erforderlich Ihre
+          Balkonkraftwerk im Marktstammdatenregister einzutragen.
+          <a
+            href="https://www.marktstammdatenregister.de/MaStR/Assistent/RegistrierungsAssistentInfo?typ=1394"
+            target="_blank"
+            class="tw-font-bold tw-underline"
+            >Hier</a
+          >
+          geht’s zur Registrierung.
+        </p>
+      </div>
     </div>
-
-    <div class="tw-col-span-5 md:tw-col-span-3">
-      <p class="tw-text-lg tw-font-semibold tw-text-black">
-        Muss ich die Installation bei meinem Stromanbieter melden?
-      </p>
-      <p class="tw-mt-2 tw-text-base tw-leading-7 tw-text-gray-600">
-        Nein, die Inbetriebnahme muss nicht mehr beim Stromanbieter gemeldet werden, es ist jedoch erforderlich Ihre
-        Balkonkraftwerk im Marktstammdatenregister einzutragen.
-        <a
-          href="https://www.marktstammdatenregister.de/MaStR/Assistent/RegistrierungsAssistentInfo?typ=1394"
-          target="_blank"
-          class="tw-font-bold tw-underline"
-          >Hier</a
-        >
-        geht’s zur Registrierung.
-      </p>
-    </div>
-  </div>
+  </slider-component>
 </div>

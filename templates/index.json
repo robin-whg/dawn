@@ -6,23 +6,23 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Energie sparen und die Umwelt schonen",
+            "heading": "<strong>Balkonkraftwerk kaufen und<\/strong>",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Nutzen sie  unsere Steckfertigen Balkonkraftwerk-Lösungen für Zuhause.",
-            "text_style": "body"
+            "text": "<strong>Nutzen sie  unsere Steckfertigen Balkonkraftwerk-Lösungen für Zuhause.<\/strong>",
+            "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Produkten ansehen",
+            "button_label_1": "Zu den Balkonkraftwerken",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -34,6 +34,10 @@
         "text",
         "button"
       ],
+      "disabled": true,
+      "custom_css": [
+
+      ],
       "settings": {
         "video_background": true,
         "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c3ec88e469c6440f8bb45ae9e90bf695.mp4",
@@ -42,6 +46,59 @@
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "bottom",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "solar_hero": {
+      "type": "solar-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Balkonkraftwerk kaufen und<\/strong>",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Steckfertige Balkonkraftwerke für Ihr Zuhause.<\/strong>",
+            "text_style": "subtitle"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Zu den Balkonkraftwerken",
+            "button_link_1": "shopify:\/\/collections\/balkonkraftwerke-1",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2149352236.jpg",
+        "video_background": false,
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c3ec88e469c6440f8bb45ae9e90bf695.mp4",
+        "image_overlay_opacity": 20,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
@@ -175,8 +232,8 @@
         "button_bEkfet": {
           "type": "button",
           "settings": {
-            "button_label": "Produkte ansehen",
-            "button_link": "shopify:\/\/collections\/all",
+            "button_label": "Zu den Balkonkraftwerken",
+            "button_link": "shopify:\/\/collections\/balkonkraftwerke-1",
             "button_style_secondary": false
           }
         }
@@ -186,9 +243,8 @@
         "text_g3XjA9",
         "button_bEkfet"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/pexels-jan-van-bizar-12224996.jpg",
+        "image": "shopify:\/\/shop_images\/70123.jpg",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -196,7 +252,7 @@
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "image_behavior": "zoom-in",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -221,6 +277,7 @@
     },
     "solar_video": {
       "type": "solar-video",
+      "disabled": true,
       "settings": {
       }
     },
@@ -244,7 +301,7 @@
           "type": "button",
           "settings": {
             "button_label": "Produkte ansehen",
-            "button_link": "",
+            "button_link": "shopify:\/\/collections\/all",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -257,6 +314,7 @@
         "text_6xQWge",
         "button_DrpUN4"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -269,6 +327,7 @@
   },
   "order": [
     "image_banner",
+    "solar_hero",
     "solar_feature",
     "solar_how_to",
     "collection_list_dndztg",
