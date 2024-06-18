@@ -1,5 +1,33 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .animated-path {
+    stroke-dasharray: 5;
+    stroke-dashoffset: 0;
+    animation: dash 2s linear infinite;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 1000;
+    }
+  }
+</style>
+
+{% style %}
+  .animated-path {
+    stroke-dasharray: 5;
+    stroke-dashoffset: 0;
+    animation: dash 2s linear infinite;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 1000;
+    }
+  }
+{% endstyle %}
+
 <div class="tw-container tw-mx-auto tw-max-w-[1400px] tw-py-16 md:tw-px-12 tw-px-4">
   <slider-component class="slider-mobile-gutter scroll-trigger animate--slide-in">
     <div
@@ -38,15 +66,44 @@
       </div>
 
       <div class="tw-hidden md:tw-block tw-col-span-1 md:tw-col-span-1 md:tw-order-3">
+        {% comment %}
+          <svg
+            class="tw-w-full tw-h-auto tw-flex-none"
+            width="260"
+            height="82"
+            viewBox="0 0 260 82"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M3.44024 52.2391C0.443231 53.6528 -0.840283 57.2284 0.573432 60.2254C1.98715 63.2225 5.56275 64.506 8.55976 63.0923L3.44024 52.2391ZM256.027 63.3129C259.146 62.1933 260.767 58.7574 259.647 55.6385L241.403 4.81388C240.283 1.69502 236.847 0.074273 233.729 1.19383C230.61 2.31339 228.989 5.7493 230.109 8.86816L246.326 54.0456L201.148 70.2628C198.029 71.3823 196.409 74.8182 197.528 77.9371C198.648 81.0559 202.084 82.6767 205.202 81.5571L256.027 63.3129ZM8.55976 63.0923C45.3932 45.7176 86.5534 36 130 36V24C84.7465 24 41.8411 34.1251 3.44024 52.2391L8.55976 63.0923ZM130 36C173.447 36 214.607 45.7176 251.44 63.0923L256.56 52.2391C218.159 34.1251 175.254 24 130 24V36Z" fill="#1B1D21"/>
+          </svg>
+        {% endcomment %}
+
         <svg
           class="tw-w-full tw-h-auto tw-flex-none"
-          width="260"
-          height="82"
-          viewBox="0 0 260 82"
+          width="280"
+          height="92"
+          viewBox="0 0 280 92"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M3.44024 52.2391C0.443231 53.6528 -0.840283 57.2284 0.573432 60.2254C1.98715 63.2225 5.56275 64.506 8.55976 63.0923L3.44024 52.2391ZM256.027 63.3129C259.146 62.1933 260.767 58.7574 259.647 55.6385L241.403 4.81388C240.283 1.69502 236.847 0.074273 233.729 1.19383C230.61 2.31339 228.989 5.7493 230.109 8.86816L246.326 54.0456L201.148 70.2628C198.029 71.3823 196.409 74.8182 197.528 77.9371C198.648 81.0559 202.084 82.6767 205.202 81.5571L256.027 63.3129ZM8.55976 63.0923C45.3932 45.7176 86.5534 36 130 36V24C84.7465 24 41.8411 34.1251 3.44024 52.2391L8.55976 63.0923ZM130 36C173.447 36 214.607 45.7176 251.44 63.0923L256.56 52.2391C218.159 34.1251 175.254 24 130 24V36Z" fill="#1B1D21"/>
+          <path d="M6 52.5127C6 52.5127 51.5 25.0127 125.5 25.0127C199.5 25.0127 254 52.5127 254 52.5127"
+          stroke="currentColor"
+          stroke-width="12"
+          stroke-dasharray="50"
+          stroke-dashoffset="100"
+          stroke-miterlimit="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
+          >
+              <animate
+                attributeName="stroke-dashoffset"
+                values="100;0"
+                dur=".8s"
+                calcMode="linear"
+                repeatCount="indefinite" />
+          </path>
         </svg>
       </div>
 
@@ -77,15 +134,43 @@
       </div>
 
       <div class="tw-hidden md:tw-block tw-col-span-1 md:tw-col-span-1 tw-self-end tw-p-1 md:tw-order-4">
+        {% comment %}
+          <svg
+            class="tw-w-full tw-h-auto tw-flex-none"
+            width="260"
+            height="82"
+            viewBox="0 0 260 82"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M3.44024 30.4269C0.443233 29.0132 -0.840281 25.4376 0.573435 22.4406C1.98715 19.4436 5.56275 18.16 8.55976 19.5738L3.44024 30.4269ZM256.027 19.3532C259.146 20.4727 260.767 23.9086 259.647 27.0275L241.403 77.8522C240.283 80.971 236.847 82.5918 233.729 81.4722C230.61 80.3526 228.989 76.9167 230.109 73.7979L246.326 28.6204L201.148 12.4033C198.029 11.2837 196.409 7.8478 197.528 4.72894C198.648 1.61009 202.084 -0.0106614 205.202 1.1089L256.027 19.3532ZM8.55976 19.5738C45.3932 36.9484 86.5534 46.666 130 46.666L130 58.666C84.7465 58.666 41.8411 48.5409 3.44024 30.4269L8.55976 19.5738ZM130 46.666C173.447 46.666 214.607 36.9484 251.44 19.5738L256.56 30.4269C218.159 48.5409 175.254 58.666 130 58.666L130 46.666Z" fill="#1B1D21"/>
+          </svg>
+        {% endcomment %}
         <svg
-          class="tw-w-full tw-h-auto tw-flex-none"
-          width="260"
-          height="82"
-          viewBox="0 0 260 82"
+          class="tw-w-full tw-h-auto tw-flex-none tw-rotate-180"
+          width="280"
+          height="92"
+          viewBox="0 0 280 92"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M3.44024 30.4269C0.443233 29.0132 -0.840281 25.4376 0.573435 22.4406C1.98715 19.4436 5.56275 18.16 8.55976 19.5738L3.44024 30.4269ZM256.027 19.3532C259.146 20.4727 260.767 23.9086 259.647 27.0275L241.403 77.8522C240.283 80.971 236.847 82.5918 233.729 81.4722C230.61 80.3526 228.989 76.9167 230.109 73.7979L246.326 28.6204L201.148 12.4033C198.029 11.2837 196.409 7.8478 197.528 4.72894C198.648 1.61009 202.084 -0.0106614 205.202 1.1089L256.027 19.3532ZM8.55976 19.5738C45.3932 36.9484 86.5534 46.666 130 46.666L130 58.666C84.7465 58.666 41.8411 48.5409 3.44024 30.4269L8.55976 19.5738ZM130 46.666C173.447 46.666 214.607 36.9484 251.44 19.5738L256.56 30.4269C218.159 48.5409 175.254 58.666 130 58.666L130 46.666Z" fill="#1B1D21"/>
+          <path d="M6 52.5127C6 52.5127 51.5 25.0127 125.5 25.0127C199.5 25.0127 254 52.5127 254 52.5127"
+          stroke="currentColor"
+          stroke-width="12"
+          stroke-dasharray="50"
+          stroke-dashoffset="100"
+          stroke-miterlimit="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"
+          >
+              <animate
+                attributeName="stroke-dashoffset"
+                values="-100;0"
+                dur=".8s"
+                calcMode="linear"
+                repeatCount="indefinite" />
+          </path>
         </svg>
       </div>
 
