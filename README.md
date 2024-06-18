@@ -1,6 +1,6 @@
 # ToDo
 
-npx tailwindcss -i ./src/input.css -o ./assets/application.css
+npx tailwindcss -i ./src/input.css -o ./assets/application.css --watch
 
 ## FAQ
 
